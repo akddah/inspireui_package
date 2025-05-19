@@ -1,4 +1,4 @@
-library inspireui;
+library inspireui_package;
 
 /// Common Extension
 export 'extensions/color_extension.dart';
