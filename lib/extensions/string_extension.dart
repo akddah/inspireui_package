@@ -7,17 +7,12 @@ extension StringExtensions on String {
   bool get isListView => this != 'horizontal';
 
   String toSpaceSeparated() {
-    final value =
-        replaceAllMapped(RegExp(r'.{4}'), (match) => '${match.group(0)} ');
+    final value = replaceAllMapped(RegExp(r'.{4}'), (match) => '${match.group(0)} ');
     return value;
   }
 
   String formatCopy() {
-    return replaceAll('},', '\n},\n')
-        .replaceAll('[{', '[\n{\n')
-        .replaceAll(',"', ',\n"')
-        .replaceAll('{"', '{\n"')
-        .replaceAll('}]', '\n}\n]');
+    return replaceAll('},', '\n},\n').replaceAll('[{', '[\n{\n').replaceAll(',"', ',\n"').replaceAll('{"', '{\n"').replaceAll('}]', '\n}\n]');
   }
 
   bool get isNoInternetError => contains('SocketException: Failed host lookup');
@@ -40,8 +35,7 @@ extension StringExtensions on String {
     return '${this[0].toUpperCase()}${substring(1).toLowerCase()}';
   }
 
-  String toTitleCase() =>
-      split(' ').map((str) => str.upperCaseFirstChar()).join(' ');
+  String toTitleCase() => split(' ').map((str) => str.upperCaseFirstChar()).join(' ');
 
   RoutingData get getRoutingData {
     final uriData = Uri.parse(this);
@@ -82,12 +76,12 @@ extension NullableStringExtensions on String? {
     return url.startsWith('http') || url.startsWith('https');
   }
 
-  HexColor? toColor() {
+  MyHexColor? toColor() {
     if (isEmptyOrNull) {
       return null;
     }
 
-    return HexColor(this);
+    return MyHexColor(this);
   }
 
   bool validateEmail() {

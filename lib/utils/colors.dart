@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../extensions.dart';
 import 'logs.dart';
 
-class HexColor extends Color {
+class MyHexColor extends Color {
   static final myLogger = LoggerDebug(constTitle: 'HexColor in inspire_ui');
   static int _getColorFromHex(dynamic hexColor) {
     try {
@@ -25,15 +25,15 @@ class HexColor extends Color {
     }
   }
 
-  HexColor(final hexColor) : super(_getColorFromHex(hexColor));
+  MyHexColor(final hexColor) : super(_getColorFromHex(hexColor));
 
-  factory HexColor.fromJson(dynamic json) => HexColor(json);
+  factory MyHexColor.fromJson(dynamic json) => MyHexColor(json);
 
-  static List<HexColor>? fromListJson(List listJson) {
+  static List<MyHexColor>? fromListJson(List listJson) {
     try {
       final listColor = listJson.map((e) {
         // ignore: avoid_as
-        return HexColor.fromJson(e as String);
+        return MyHexColor.fromJson(e as String);
         // ignore: avoid_as
       }).toList();
 
