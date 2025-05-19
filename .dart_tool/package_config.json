@@ -356,13 +356,13 @@
       "languageVersion": "3.2"
     },
     {
-      "name": "inspireui_package",
+      "name": "inspireui",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2025-05-19T18:23:15.963344Z",
+  "generated": "2025-05-19T19:10:40.411624Z",
   "generator": "pub",
   "generatorVersion": "3.6.0",
   "flutterRoot": "file:///Users/abdallah/fvm/versions/3.27.1",
