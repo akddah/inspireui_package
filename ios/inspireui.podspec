@@ -3,7 +3,7 @@
 # Run `pod lib lint inspireui.podspec` to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'inspireui'
+  s.name             = 'inspireui_package'
   s.version          = '1.0.0'
   s.summary          = 'Common useful and Widget Use For FluxStore Products (Flutter E-Commerce App)'
   s.description      = <<-DESC
